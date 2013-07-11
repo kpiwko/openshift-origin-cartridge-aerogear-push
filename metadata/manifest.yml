@@ -7,7 +7,7 @@ License: LGPL
 License-Url: http://www.gnu.org/copyleft/lesser.txt
 Vendor: Red Hat
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: test
+Cartridge-Vendor: redhat
 Categories:
   - service
   - web_framework
