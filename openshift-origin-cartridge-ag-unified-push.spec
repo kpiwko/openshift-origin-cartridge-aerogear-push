@@ -66,12 +66,12 @@ alternatives --set jbossas-7 /usr/share/jboss-as
 %endif
 
 # Add the AeroGear netty module
-mkdir -p /etc/alternatives/jbossas-7/modules/org/jboss/aerogear/netty/main
-ln -fs %{cartridgedir}/versions/0.8.0/modules/org/jboss/aerogear/netty/main/* /etc/alternatives/jbossas-7/modules/org/jboss/aerogear/netty/main
+mkdir -p %{cartridgedir}/usr/modules/org/jboss/aerogear/netty/main
+ln -fs %{cartridgedir}/versions/0.8.0/modules/org/jboss/aerogear/netty/main/* %{cartridgedir}/usr/modules/org/jboss/aerogear/netty/main
 
 # Add the AeroGear SimplePush module
-mkdir -p /etc/alternatives/jbossas-7/modules/org/jboss/aerogear/simplepush/main
-ln -fs %{cartridgedir}/versions/0.8.0/modules/org/jboss/aerogear/simplepush/main/* /etc/alternatives/jbossas-7/modules/org/jboss/aerogear/simplepush/main
+mkdir -p %{cartridgedir}/usr/modules/org/jboss/aerogear/simplepush/main
+ln -fs %{cartridgedir}/versions/0.8.0/modules/org/jboss/aerogear/simplepush/main/* %{cartridgedir}/usr/modules/org/jboss/aerogear/simplepush/main
 
 %posttrans
 %{_sbindir}/oo-admin-cartridge --action install --source %{cartridgedir}
