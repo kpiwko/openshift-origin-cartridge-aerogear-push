@@ -1,14 +1,14 @@
-%global cartridgedir %{_libexecdir}/openshift/cartridges/ag-unified-push
+%global cartridgedir %{_libexecdir}/openshift/cartridges/aerogear-push
 %global jbossver 7.1.1.Final
 
-Summary:       Provides the AeroGear Unified Push Server on top of JBossAS7
-Name:          openshift-origin-cartridge-ag-unified-push
+Summary:       Provides the AeroGear UnifiedPush Server on top of JBossAS7
+Name:          openshift-origin-cartridge-aerogear-push
 Version: 1.0.0
 Release:       1%{?dist}
 Group:         Development/Languages
 License:       ASL 2.0
 URL:           http://www.openshift.com
-Source0:       https://github.com/fjuma/openshift-origin-cartridge-ag-unified-push/archive/master.zip
+Source0:       https://github.com/fjuma/openshift-origin-cartridge-aerogear-push/archive/master.zip
 Requires:      rubygem(openshift-origin-node)
 Requires:      openshift-origin-node-util
 Requires:      lsof
@@ -29,7 +29,7 @@ BuildRequires: jpackage-utils
 BuildArch:     noarch
 
 %description
-Provides the AeroGear Unified Push Server on top of JBossAS7 on OpenShift. (Cartridge Format V2)
+Provides the AeroGear UnifiedPush Server on top of JBossAS7 on OpenShift. (Cartridge Format V2)
 
 
 %prep

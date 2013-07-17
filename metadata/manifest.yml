@@ -1,7 +1,7 @@
-Name: ag-unified-push
-Cartridge-Short-Name: AG_UNIFIED_PUSH
-Display-Name: AeroGear Unified Push Server 0.8.0
-Description: "AeroGear Unified Push Server is a server that allows native push notifications to be sent to different mobile operating systems. Runs on top of JBoss Application Server 7."
+Name: aerogear-push
+Cartridge-Short-Name: AEROGEAR_PUSH
+Display-Name: AeroGear UnifiedPush Server 0.8.0
+Description: "AeroGear UnifiedPush Server is a server that allows native push notifications to be sent to different mobile operating systems. Runs on top of JBoss Application Server 7."
 Version: 0.8.0
 License: LGPL
 License-Url: http://www.gnu.org/copyleft/lesser.txt
@@ -18,7 +18,7 @@ Website: http://aerogear.org
 Help-Topics:
   "Developer Center": https://www.openshift.com/developers
 Cart-Data:
-  - Key: OPENSHIFT_AG_UNIFIED_PUSH_LOG_DIR
+  - Key: OPENSHIFT_AEROGEAR_PUSH_LOG_DIR
     Type: environment
     Description: "Directory to store application log files."
   - Key: OPENSHIFT_TMP_DIR
@@ -27,10 +27,10 @@ Cart-Data:
   - Key: OPENSHIFT_REPO_DIR
     Type: environment
     Description: "Application root directory where application files reside. This directory is reset every time you do a git-push"
-  - Key: OPENSHIFT_AG_UNIFIED_PUSH_HTTP_PORT
+  - Key: OPENSHIFT_AEROGEAR_PUSH_HTTP_PORT
     Type: environment
     Description: "Internal port to which the web-framework binds to."
-  - Key: OPENSHIFT_AG_UNIFIED_PUSH_IP
+  - Key: OPENSHIFT_AEROGEAR_PUSH_IP
     Type: environment
     Description: "Internal IP to which the web-framework binds to."
   - Key: OPENSHIFT_APP_DNS
